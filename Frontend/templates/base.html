@@ -1,0 +1,76 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Column Styling</title>
+  <style>
+    /* Apply styles to specific columns */
+    col {
+      background-color: #f4f4f4;
+    }
+
+    col:nth-child(1) { /* First column */
+      background-color: #ffdddd;
+      width: 150px;
+    }
+
+    col:nth-child(2) { /* Second column */
+      background-color: #ddffdd;
+      text-align: center;
+    }
+
+    col:nth-child(3) { /* Third column */
+      background-color: #ddddff;
+      font-weight: bold;
+    }
+
+    /* Table styling */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    } 
+    
+    </style>  
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+
+  {% include "navabar.html" %}
+
+    
+
+      <!--dynamic contents -->
+
+      {% block content %}
+
+       {% endblock %}
+
+      <footer>
+        <p>muthu@2023</p>
+
+      </footer>
+    
+
+
+
+    

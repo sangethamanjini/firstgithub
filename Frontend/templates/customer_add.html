@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Add New Customer</h1>
+
+    <a href="/orders/add/customer/">
+        <button>Back</button>
+    </a>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ customer_form.as_p }}  <!-- Ensure customer_form is passed in the context -->
+        <button type="submit">Add Customer</button>
+    </form>
+{% endblock %}
